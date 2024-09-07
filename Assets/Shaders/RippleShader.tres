@@ -134,7 +134,7 @@ render_mode blend_mix;
 
 
 // Varyings
-varying vec4 VertexColour;
+varying vec4 var_VertexColour;
 
 uniform float InitialAlpha = 0.46000000834465;
 uniform float Speed = 0.10000000149012;
@@ -162,7 +162,7 @@ void vertex() {
 
 
 // VaryingSetter:3
-	VertexColour = n_out2p0;
+	var_VertexColour = n_out2p0;
 
 
 }

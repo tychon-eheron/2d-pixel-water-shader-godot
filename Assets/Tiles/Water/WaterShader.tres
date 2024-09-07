@@ -439,7 +439,7 @@ render_mode blend_mix;
 
 
 // Varyings
-varying vec2 WorldPos;
+varying vec2 var_WorldPos;
 
 uniform vec4 WaterColour : source_color;
 uniform float CausticTextureScale;
@@ -574,7 +574,7 @@ void vertex() {
 
 
 // VaryingSetter:5
-	WorldPos = vec2(n_out4p0.xy);
+	var_WorldPos = vec2(n_out4p0.xy);
 
 
 }
@@ -585,7 +585,7 @@ void fragment() {
 
 
 // VaryingGetter:6
-	vec2 n_out6p0 = WorldPos;
+	vec2 n_out6p0 = var_WorldPos;
 
 
 // VectorFunc:59
@@ -688,7 +688,7 @@ void fragment() {
 
 
 // VaryingGetter:13
-	vec2 n_out13p0 = WorldPos;
+	vec2 n_out13p0 = var_WorldPos;
 
 
 // Vector2Constant:40
@@ -735,7 +735,7 @@ void fragment() {
 
 
 // VaryingGetter:96
-	vec2 n_out96p0 = WorldPos;
+	vec2 n_out96p0 = var_WorldPos;
 
 
 // VectorFunc:97
@@ -950,7 +950,7 @@ void fragment() {
 
 
 // VaryingGetter:142
-	vec2 n_out142p0 = WorldPos;
+	vec2 n_out142p0 = var_WorldPos;
 
 
 // FloatParameter:164
