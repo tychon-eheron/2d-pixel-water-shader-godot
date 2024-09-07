@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://bjjrktu023gxh"]
+[gd_scene load_steps=13 format=4 uid="uid://bjjrktu023gxh"]
 
 [ext_resource type="TileSet" uid="uid://b5p22y37tdyep" path="res://Assets/Tiles/Water/WaterTileSet.tres" id="1_1qui1"]
 [ext_resource type="Material" uid="uid://cgjocunkt7lim" path="res://Assets/Tiles/Water/WaterMaterial.tres" id="1_cf1t6"]
@@ -18,6 +18,10 @@ point_count = 2
 
 [sub_resource type="Gradient" id="Gradient_5mwvf"]
 colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_atjtp"]
+line_spacing = 0.0
+font_size = 10
 
 [node name="Node2D" type="Node2D"]
 
@@ -68,3 +72,10 @@ largestTipWidth = 1.0
 position = Vector2(128, 128)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("6_vqg40")
+
+[node name="TimeLog" type="Label" parent="WaterTrail"]
+offset_left = 12.0
+offset_top = 4.0
+offset_right = 52.0
+offset_bottom = 27.0
+label_settings = SubResource("LabelSettings_atjtp")
